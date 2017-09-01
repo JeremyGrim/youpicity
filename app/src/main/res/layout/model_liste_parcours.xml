@@ -11,6 +11,7 @@
         android:layout_gravity="top"
         android:background="@drawable/content_white"
         android:orientation="vertical"
+        android:elevation="6dp"
         android:weightSum="1">
 
 
