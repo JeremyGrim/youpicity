@@ -12,22 +12,16 @@
     tools:context="com.cdi.youpicity.Ville.ListLille"
     >
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+    <include layout="@layout/activity_header_action"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        app:titleTextColor="#ffffff"
-        android:theme="@style/AppTheme"
-        app:popupTheme="@style/AppTheme"/>
+        android:layout_height="65dp"
+        android:id="@+id/include2" />
 
     <ScrollView android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:layout_marginTop="70dp"
-         >
+        android:layout_below="@+id/include2">
 
         <ListView
 
@@ -37,6 +31,13 @@
 
 
 </ScrollView>
+
+
+    <include layout="@layout/activity_action_bar_footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/include_footer" />
 
 
 </RelativeLayout>

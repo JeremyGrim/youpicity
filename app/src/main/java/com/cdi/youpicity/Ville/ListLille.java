@@ -1,13 +1,18 @@
 package com.cdi.youpicity.Ville;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.cdi.youpicity.Home;
 import com.cdi.youpicity.R;
 import com.cdi.youpicity.adapters.ParcoursAdapter;
+import com.cdi.youpicity.layout.Header;
 import com.cdi.youpicity.models.Parcours;
 
 import java.util.ArrayList;
@@ -33,10 +38,19 @@ public class ListLille extends AppCompatActivity {
         ParcoursAdapter adapter = new ParcoursAdapter(ListLille.this, parcoursList);
         mListView.setAdapter(adapter);
 
+        final ImageView connexion = (ImageView) findViewById(R.id.homeLink);
+        connexion.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListLille.this, Home.class);
+                startActivity(intent);
+            }
+        });
 
 
-    Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-    setSupportActionBar(myToolbar);
+ //   Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+ //   setSupportActionBar(myToolbar);
 
     }
 
@@ -55,10 +69,10 @@ public class ListLille extends AppCompatActivity {
         return infos;
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //ajoute les entrées de menu_test à l'ActionBar
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        //ajoute les entrées de menu_test à l'ActionBar
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        return true;
+//    }
 }

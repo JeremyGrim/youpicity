@@ -9,24 +9,19 @@
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
     tools:context="com.cdi.youpicity.Home"
-    android:background="#e3e3e3"
+    android:background="@color/veryLigthGrey"
     >
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+    <include layout="@layout/activity_header_action"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        app:titleTextColor="#ffffff"
-        android:theme="@style/AppTheme"
-        app:popupTheme="@style/AppTheme"/>
+        android:layout_height="65dp"
+        android:id="@+id/include" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="60dp">
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/include_footer">
 
 
         <LinearLayout
@@ -313,6 +308,11 @@
 
 
     </ScrollView>
+    <include layout="@layout/activity_action_bar_footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/include_footer" />
 
 
 </RelativeLayout>

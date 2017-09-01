@@ -29,8 +29,8 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+//        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+//        setSupportActionBar(myToolbar);
 
         Typeface font = Typeface.createFromAsset( getAssets(), "Shrikhand-Regular.ttf" );
         TextView title = (TextView)findViewById( R.id.title);
@@ -38,10 +38,10 @@ public class Home extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //ajoute les entrées de menu_test à l'ActionBar
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        //ajoute les entrées de menu_test à l'ActionBar
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        return true;
+//    }
 }
