@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.cdi.youpicity.Home"
+    android:background="#e3e3e3"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextColor="#ffffff"
+        android:theme="@style/AppTheme"
+        app:popupTheme="@style/AppTheme"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.98"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Envie de découvrir une ville"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="top"
+                android:background="@drawable/content_white"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageParcours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lille_1"
+                        android:scaleType = "centerCrop"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/typeParcours"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.98"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Visitez Lille"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_lille"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/btn_ripple_green"
+                        android:text="En route"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="top"
+            android:background="@drawable/content_white"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arras_1"
+                    android:scaleType = "centerCrop"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.98"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Visitez Arras"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_arras"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/btn_ripple_green"
+                        android:text="En route"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="top"
+                android:background="@drawable/content_white"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bruxelles_1"
+                        android:scaleType = "centerCrop"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.98"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Visitez Bruxelles"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_bruxelles"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/btn_ripple_green"
+                        android:text="En route"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="top"
+                android:background="@drawable/content_white"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/paris_1"
+                        android:scaleType = "centerCrop"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.98"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Visitez Paris"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_paris"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/btn_ripple_green"
+                        android:text="En route"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+

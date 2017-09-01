@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.cdi.youpicity.MainActivity"
+    >
+    <!--<ImageView
+        android:id="@+id/myBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitEnd"
+        android:src="@drawable/city_2" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/logo"
+                    android:scaleType="centerCrop"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.93"
+                android:paddingTop="60dp">
+
+                <EditText
+                    android:id="@+id/usernameEdit"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Pseudo"
+                    android:textColorHint="#b9b9b9"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="12sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/passwordEdit"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:textColorHint="#b9b9b9"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/SignIn"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/btn_ripple_white"
+                    android:text="Connexion"
+                    android:textColor="#16a085"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/btn_ripple_green"
+                    android:text="Créer un compte"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+
+<!--    <Button
+        android:id="@+id/Login"
+
+        android:text="Connexion"
+        android:textColor="#16a085"
+        android:textSize="14sp"
+
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_white"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/SignIn"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/SignIn"
+
+        android:text="Créer un compte"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_nobg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="95dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />-->
+
+
+
+
+

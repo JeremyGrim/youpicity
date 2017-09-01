@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YoupiCity</string>
+    <string name="fa_chevron_right">&#xf054;</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis pulvinar arcu. Etiam id dolor sit amet diam ultricies tempus. Curabitur id scelerisque ante. Vestibulum a rhoncus urna. Suspendisse eu tellus at mi lobortis maximus. Maecenas diam tortor, vulputate eget velit tincidunt, sodales venenatis sem. Quisque vitae metus vitae nibh lacinia pulvinar ut sit amet velit. Nulla consequat felis lacus, at dapibus ante scelerisque eu. Cras lacinia quam ac vehicula sodales.</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
