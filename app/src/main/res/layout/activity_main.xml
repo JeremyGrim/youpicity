@@ -30,6 +30,8 @@
             android:layout_gravity="top"
             android:weightSum="1">
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,39 +86,47 @@
                     android:layout_marginBottom="10dp"
                     />
 
-                <Button
-                    android:id="@+id/SignIn"
-                    android:layout_width="250dp"
-                    android:layout_height="45dp"
+                <com.dd.ShadowLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="13dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="80dp"
-                    android:background="@drawable/btn_ripple_white"
-                    android:text="Connexion"
-                    android:textColor="#16a085"
-                    android:textSize="14sp" />
+                    app:sl_cornerRadius="8dp"
+                    app:sl_dx="0dp"
+                    app:sl_dy="1dp"
+                    android:layout_marginBottom="10dp"
+                    app:sl_shadowColor="@color/shadow"
+                    app:sl_shadowRadius="4dp">
+                    <Button
+                        android:id="@+id/SignIn"
+                        android:layout_width="250dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/raised_selector_white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:text="Se connecter"/>
+                </com.dd.ShadowLayout>
 
-                <Button
-                    android:id="@+id/login"
-                    android:layout_width="250dp"
-                    android:layout_height="45dp"
+                <com.dd.ShadowLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="13dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:background="@drawable/btn_ripple_green"
-                    android:text="Créer un compte"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-
-
+                    app:sl_cornerRadius="8dp"
+                    app:sl_dx="0dp"
+                    app:sl_dy="1dp"
+                    android:layout_marginBottom="10dp"
+                    app:sl_shadowColor="@color/shadow"
+                    app:sl_shadowRadius="4dp">
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="250dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/raised_selector_green"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:text="Créer un compte"/>
+                </com.dd.ShadowLayout>
 
 
             </LinearLayout>

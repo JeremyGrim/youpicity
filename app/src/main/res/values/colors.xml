@@ -7,5 +7,6 @@
     <color name="grey">#131e26</color>
     <color name="ligthGrey">#929292</color>
     <color name="veryLigthGrey">#F2F2F2</color>
+    <color name="shadow">#29000000</color>
 
 </resources>

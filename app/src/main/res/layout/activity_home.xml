@@ -48,15 +48,24 @@
                 android:textStyle="bold" />
 
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="151dp"
-                android:layout_margin="10dp"
-                android:layout_gravity="top"
-                android:background="@drawable/content_white"
-                android:orientation="vertical"
-                android:weightSum="1">
+            <com.dd.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:sl_cornerRadius="8dp"
+                app:sl_dx="0dp"
+                app:sl_dy="1dp"
+                android:layout_marginBottom="10dp"
+                app:sl_shadowColor="@color/shadow"
+                app:sl_shadowRadius="4dp">
+                <LinearLayout
+                    android:id="@+id/btn_lille"
+                    android:layout_width="match_parent"
+                    android:layout_height="151dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/content_white"
+                    android:orientation="vertical"
+                    android:weightSum="1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -92,35 +101,37 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_lille"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
                         android:gravity="center"
-                        android:layout_marginBottom="13dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/btn_ripple_green"
-                        android:text="En route"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
-                        android:textSize="14sp" />
+                        android:background="@drawable/ic_chevron_right"
+
+                        android:textAlignment="center" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
+            </com.dd.ShadowLayout>
 
-
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="151dp"
-            android:layout_margin="10dp"
-            android:layout_gravity="top"
-            android:background="@drawable/content_white"
-            android:orientation="vertical"
-            android:weightSum="1">
+            <com.dd.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:sl_cornerRadius="8dp"
+                app:sl_dx="0dp"
+                app:sl_dy="1dp"
+                android:layout_marginBottom="10dp"
+                app:sl_shadowColor="@color/shadow"
+                app:sl_shadowRadius="4dp">
+                <LinearLayout
+                    android:id="@+id/btn_arras"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_gravity="top"
+                android:background="@drawable/content_white"
+                android:orientation="vertical"
+                android:weightSum="1">
 
                 <LinearLayout
                 android:layout_width="match_parent"
@@ -154,32 +165,34 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_arras"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
                         android:gravity="center"
-                        android:layout_marginBottom="13dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/btn_ripple_green"
-                        android:text="En route"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
-                        android:textSize="14sp" />
+                        android:background="@drawable/ic_chevron_right"
+
+                        android:textAlignment="center" />
 
                 </LinearLayout>
 
 
 
             </LinearLayout>
+            </com.dd.ShadowLayout>
 
-
-            <LinearLayout
+            <com.dd.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:sl_cornerRadius="8dp"
+                app:sl_dx="0dp"
+                app:sl_dy="1dp"
+                android:layout_marginBottom="10dp"
+                app:sl_shadowColor="@color/shadow"
+                app:sl_shadowRadius="4dp">
+                <LinearLayout
+                    android:id="@+id/btn_bruxelles"
                 android:layout_width="match_parent"
                 android:layout_height="151dp"
-                android:layout_margin="10dp"
                 android:layout_gravity="top"
                 android:background="@drawable/content_white"
                 android:orientation="vertical"
@@ -217,31 +230,34 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_bruxelles"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
                         android:gravity="center"
-                        android:layout_marginBottom="13dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/btn_ripple_green"
-                        android:text="En route"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
-                        android:textSize="14sp" />
+                        android:background="@drawable/ic_chevron_right"
+
+                        android:textAlignment="center" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
+            </com.dd.ShadowLayout>
 
 
-            <LinearLayout
+            <com.dd.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:sl_cornerRadius="8dp"
+                app:sl_dx="0dp"
+                app:sl_dy="1dp"
+                android:layout_marginBottom="10dp"
+                app:sl_shadowColor="@color/shadow"
+                app:sl_shadowRadius="4dp">
+                <LinearLayout
+                    android:id="@+id/btn_paris"
                 android:layout_width="match_parent"
                 android:layout_height="151dp"
-                android:layout_margin="10dp"
                 android:layout_gravity="top"
                 android:background="@drawable/content_white"
                 android:orientation="vertical"
@@ -279,25 +295,18 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_paris"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
                         android:gravity="center"
-                        android:layout_marginBottom="13dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/btn_ripple_green"
-                        android:text="En route"
-                        android:textAlignment="center"
-                        android:textColor="#ffffff"
-                        android:textSize="14sp" />
+                        android:background="@drawable/ic_chevron_right"
+
+                        android:textAlignment="center" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
+            </com.dd.ShadowLayout>
 
 
 

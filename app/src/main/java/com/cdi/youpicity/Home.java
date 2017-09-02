@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.cdi.youpicity.Ville.ListLille;
@@ -19,7 +20,7 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        final Button connexion = (Button) findViewById(R.id.btn_lille);
+        final LinearLayout connexion = (LinearLayout) findViewById(R.id.btn_lille);
         connexion.setOnClickListener(new View.OnClickListener() {
 
             @Override
