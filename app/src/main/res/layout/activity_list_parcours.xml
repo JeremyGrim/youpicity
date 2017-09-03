@@ -31,13 +31,12 @@
 
 
 </ScrollView>
-
-
     <include layout="@layout/activity_action_bar_footer"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:id="@+id/include_footer" />
+
 
 
 </RelativeLayout>

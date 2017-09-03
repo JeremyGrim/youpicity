@@ -34,192 +34,77 @@
 
             <LinearLayout
                 android:layout_width="104dp"
-                android:layout_height="65dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                android:background="#ffffff">
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="35dp"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_gravity="center">
-                    <Button
-                        android:id="@+id/btn_Parcours"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:background="@drawable/ic_parcours"
-                        android:textAlignment="center" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="25dp"
-                    android:gravity="center_vertical"
-                    android:background="#ffffff">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.17"
-                        android:gravity="center"
-                        android:text="Parcours"
-                        android:textColor="@color/ligthGrey" />
-
-
-                </LinearLayout>
-
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_Parcours"
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/ic_parcours_t"
+                    android:textAlignment="center" />
             </LinearLayout>
+
 
 
 
             <LinearLayout
-                android:layout_width="102dp"
-                android:layout_height="65dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                android:background="#ffffff">
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="35dp"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_gravity="center"
-                    android:weightSum="1">
-                    <Button
-                        android:id="@+id/btn_position"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="25dp"
-                        android:layout_height="32dp"
-                        android:background="@drawable/ic_marker"
-                        android:textAlignment="center"
-                        android:layout_weight="0.11" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="25dp"
-                    android:gravity="center_vertical"
-                    android:background="#ffffff">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.17"
-                        android:gravity="center"
-                        android:text="Parcours"
-                        android:textColor="@color/ligthGrey" />
-
-
-                </LinearLayout>
-
-
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btn_position"
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/ic_marker_t"
+                    android:textAlignment="center" />
             </LinearLayout>
+
 
 
 
             <LinearLayout
-                android:layout_width="105dp"
-                android:layout_height="65dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                android:background="#ffffff">
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="35dp"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_gravity="center"
-                    android:weightSum="1">
-                    <Button
-                        android:id="@+id/btn_emergency"
-                        android:layout_marginTop="6dp"
-                        android:layout_width="25dp"
-                        android:layout_height="32dp"
-                        android:background="@drawable/ic_emergency"
-                        android:textAlignment="center"
-                        android:layout_weight="0.11" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="25dp"
-                    android:gravity="center_vertical"
-                    android:background="#ffffff">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.17"
-                        android:gravity="center"
-                        android:text="Urgence"
-                        android:textColor="@color/ligthGrey" />
-
-
-                </LinearLayout>
-
-
-
-            </LinearLayout>
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btn_emergency"
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/ic_emergency_t"
+                    android:textAlignment="center"
+                    android:layout_weight="0.11" />
+             </LinearLayout>
 
 
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                android:background="#ffffff">
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="35dp"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_gravity="center"
-                    android:weightSum="1">
-                    <Button
-                        android:id="@+id/btn_menu"
-                        android:layout_marginTop="6dp"
-                        android:layout_width="25dp"
-                        android:layout_height="32dp"
-                        android:background="@drawable/ic_test"
-                        android:textAlignment="center"
-                        android:layout_weight="0.11" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="25dp"
-                    android:gravity="center_vertical"
-                    android:background="#ffffff">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.17"
-                        android:gravity="center"
-                        android:text="Menu"
-                        android:textColor="@color/ligthGrey" />
-
-
-                </LinearLayout>
-
-
-
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:weightSum="1">
+                <ImageButton
+                    android:id="@+id/btn_menu"
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/ic_menu_t"
+                    android:textAlignment="center"
+                    android:layout_weight="0.11" />
             </LinearLayout>
+
+
+
+
+
 
 
 

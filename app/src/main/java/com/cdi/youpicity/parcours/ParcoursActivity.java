@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +33,19 @@ public class ParcoursActivity extends AppCompatActivity {
             timeDisplay.setText(intent.getStringExtra("time"));
             imgDisplay.setImageResource(intent.getIntExtra("img", 0));
         }
+
+        //    Gestion du menu footer
+
+        ImageButton focus = (ImageButton) findViewById(R.id.btn_Parcours);
+        focus.setBackgroundResource( R.drawable.ic_parcours_t_focus);
+        focus.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ParcoursActivity.this, Home.class);
+                startActivity(intent);
+            }
+        });
     }
 
 //    @Override

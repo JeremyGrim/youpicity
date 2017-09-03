@@ -35,7 +35,7 @@
                 android:id="@+id/imageParcours"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/lille_1"
+                android:background="@drawable/img_lille_1"
                 android:scaleType = "centerCrop"/>
 
 

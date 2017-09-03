@@ -56,6 +56,7 @@
                     android:layout_marginTop="10dp"
                     android:ems="10"
                     android:hint="Nom"
+                    android:textColorHint="#b9b9b9"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:textSize="12sp" />
@@ -68,6 +69,7 @@
                     android:layout_marginTop="10dp"
                     android:ems="10"
                     android:hint="Pseudo"
+                    android:textColorHint="#b9b9b9"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:textSize="12sp" />
@@ -80,6 +82,7 @@
                     android:layout_marginTop="10dp"
                     android:ems="10"
                     android:hint="Adresse Email"
+                    android:textColorHint="#b9b9b9"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:textSize="12sp" />
@@ -92,6 +95,7 @@
                     android:layout_marginTop="10dp"
                     android:ems="10"
                     android:hint="Ville"
+                    android:textColorHint="#b9b9b9"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:textSize="12sp" />
@@ -104,12 +108,13 @@
                     android:layout_marginTop="10dp"
                     android:ems="10"
                     android:hint="Password"
+                    android:textColorHint="#b9b9b9"
                     android:inputType="textPassword"
                     android:paddingLeft="10dp"
                     android:textSize="12sp"
                     android:layout_marginBottom="10dp"/>
 
-                
+
 
                 <com.dd.ShadowLayout
                     android:layout_width="wrap_content"
