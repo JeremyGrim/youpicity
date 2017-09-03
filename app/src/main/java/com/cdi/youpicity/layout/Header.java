@@ -4,13 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.cdi.youpicity.Home;
 import com.cdi.youpicity.R;
-import com.cdi.youpicity.Ville.ListLille;
-import com.cdi.youpicity.parcours.ParcoursActivity;
 
 public class Header extends AppCompatActivity {
 

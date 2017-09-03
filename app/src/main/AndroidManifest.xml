@@ -32,7 +32,7 @@
         <!-- Main activity -->
         <activity android:name=".MainActivity" />
         <activity android:name=".Home" />
-        <activity android:name=".Ville.ListLille" />
+        <activity android:name=".Ville.lille.ListLille" />
         <activity android:name=".user.Login" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -51,7 +51,8 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".parcours.ParcoursActivity" />
         <activity android:name=".layout.Header" />
-        <activity android:name=".layout.actionBarFooter"></activity>
+        <activity android:name=".layout.actionBarFooter" />
+        <activity android:name=".Ville.lille.ListeEtapes"></activity>
     </application>
 
 </manifest>

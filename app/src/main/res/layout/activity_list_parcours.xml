@@ -9,7 +9,7 @@
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
     android:background="@color/veryLigthGrey"
-    tools:context="com.cdi.youpicity.Ville.ListLille"
+    tools:context="com.cdi.youpicity.Ville.lille.ListLille"
     >
 
     <include layout="@layout/activity_header_action"
@@ -36,8 +36,6 @@
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:id="@+id/include_footer" />
-
-
 
 </RelativeLayout>
 

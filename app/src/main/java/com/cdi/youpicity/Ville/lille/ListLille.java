@@ -1,4 +1,4 @@
-package com.cdi.youpicity.Ville;
+package com.cdi.youpicity.Ville.lille;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
