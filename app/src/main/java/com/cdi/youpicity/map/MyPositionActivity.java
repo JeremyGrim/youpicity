@@ -1,29 +1,58 @@
 package com.cdi.youpicity.map;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import com.cdi.youpicity.R;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
+import com.cdi.youpicity.Home;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.cdi.youpicity.R;
 
-
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MyPositionActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.activity_my_position);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+        //    Gestion du menu footer
+
+        ImageButton parcours = (ImageButton) findViewById(R.id.btn_Parcours);
+        parcours.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyPositionActivity.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button MyPosition = (Button) findViewById(R.id.btn_position);
+        MyPosition.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyPositionActivity.this, MyPositionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        MyPosition.setBackgroundResource( R.drawable.ic_marker_t_focus);
     }
 
 
@@ -40,9 +69,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng lille = new LatLng(50.633333, 3.066667);
+        float zoomLevel = 16;
+        mMap.addMarker(new MarkerOptions().position(lille).title("ma position"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lille, zoomLevel));
     }
 }

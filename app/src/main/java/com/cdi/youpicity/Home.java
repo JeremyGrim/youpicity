@@ -5,11 +5,13 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.cdi.youpicity.Ville.lille.ListLille;
+import com.cdi.youpicity.map.MyPositionActivity;
 
 public class Home extends AppCompatActivity {
 
@@ -41,9 +43,8 @@ public class Home extends AppCompatActivity {
 
         //    Gestion du menu footer
 
-        ImageButton focus = (ImageButton) findViewById(R.id.btn_Parcours);
-        focus.setBackgroundResource( R.drawable.ic_parcours_t_focus);
-        focus.setOnClickListener(new View.OnClickListener() {
+        ImageButton parcours = (ImageButton) findViewById(R.id.btn_Parcours);
+        parcours.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -51,6 +52,20 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        final Button MyPosition = (Button) findViewById(R.id.btn_position);
+        MyPosition.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, MyPositionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        parcours.setBackgroundResource( R.drawable.ic_parcours_t_focus);
+
+
 
 
     }
