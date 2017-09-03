@@ -1,8 +1,12 @@
 package com.cdi.youpicity.map;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -18,7 +22,9 @@ import com.cdi.youpicity.R;
 
 public class MyPositionActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    private static final int MY_LOCATION_REQUEST_CODE = 1;
     private GoogleMap mMap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +58,9 @@ public class MyPositionActivity extends FragmentActivity implements OnMapReadyCa
             }
         });
 
-        MyPosition.setBackgroundResource( R.drawable.ic_marker_t_focus);
+        MyPosition.setBackgroundResource(R.drawable.ic_marker_t_focus);
+
+
     }
 
 
